@@ -1,0 +1,24 @@
+                           Commands 
+1. who: Finds the current logged in user.
+2. whoami: Prints effective username who ran whoami.
+3. date: Prints date and time of instant.
+4. cal: Prints the calendar of present month.
+5. pwd: Shows the current working directory.
+6. man: Shows the manual pages of a command.
+7. mkdir: Creates a new directory.
+8. cd: Moves to the given directory.
+9. rmdir: Removes the given directory.
+10. cat: Shows file contents,combine files and create new files.
+11. mv: Moves files or directories to another directory and renames.
+12. cp: Copies files or directories from a source to target.
+13. rm: Removes files.
+14. wc: Counts number of lines, words and bytes in files.
+15. sort: Prints output of a file in sorted order. 
+16. head: Prints first few lines of a text file.
+17. tail: Prints last few lines of a text file.
+18. cmp: Compares two files byte to byte.
+19. diff: Compares two files line to line.
+20. ls: Shows the direct child directories or files in a directory.
+21. chmod: Changes the permissions of file.
+22. grep: Searches lines containing a specific keyword.
+23. echo: Displays text as it is in terminal.
