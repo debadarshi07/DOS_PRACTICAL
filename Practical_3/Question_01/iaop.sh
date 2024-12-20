@@ -15,6 +15,7 @@ perform_arithmetic() {
         *)  echo "Invalid operation selected!" ;;
     esac
 }
+
 echo "Enter the first number:"
 read num1
 echo "Enter the second number:"
@@ -23,6 +24,7 @@ if ! [[ "$num1" =~ ^-?[0-9]+$ ]] || ! [[ "$num2" =~ ^-?[0-9]+$ ]]; then
     echo "Error: Please enter valid integers."
     exit 1
 fi
+
 echo "Select the operation you want to perform:"
 echo "1. Addition (+)"
 echo "2. Subtraction (-)"
