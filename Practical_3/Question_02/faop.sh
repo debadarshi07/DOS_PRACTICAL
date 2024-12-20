@@ -3,7 +3,7 @@ perform_operation() {
         1) result=$(echo "$num1 + $num2" | bc -l);;
         2) result=$(echo "$num1 - $num2" | bc -l);;
         3) result=$(echo "$num1 * $num2" | bc -l);;
-        4) 
+        4)
             if [ $(echo "$num2 == 0" | bc -l) -eq 1 ]; then
                 echo "Error: Division by zero is not allowed."
                 exit 1

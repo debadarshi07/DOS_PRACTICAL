@@ -16,7 +16,7 @@ case $operator in
     "+") result=$((op1 + op2));;
     "-") result=$((op1 - op2));;
     "x") result=$((op1 * op2));;
-    "/") 
+    "/")
         if [ $op2 -eq 0 ]; then
             echo "Invalid input. Division by zero is not allowed."
             exit 1
