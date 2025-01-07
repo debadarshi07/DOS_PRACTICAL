@@ -3,27 +3,24 @@
 #include <sys/types.h>
 
 int main() {
-    pid_t pid = fork();  // Create a child process
+	pid_t id = fork();
 
-    if (pid == -1) {
-        // Error handling if fork() fails
-        perror("fork failed");
-        return 1;
-    } 
-    else if (pid == 0) {
-        // Child process
-        while (1) {
-            printf("Child Process: PID = %d\n", getpid());
-            sleep(1);  // Sleep to simulate indefinite execution
-        }
-    } 
-    else {
-        // Parent process
-        while (1) {
-            printf("Parent Process: PID = %d\n", getpid());
-            sleep(1);  // Sleep to simulate indefinite execution
-        }
-    }
+	if (id == -1) {
+		perror("Fork fails.");
+		return 1;
+	}
+	else if (id == 0) {
+		while (1) {
+			printf("Child Process ID: %d\n", getpid());
+			sleep(2);
+		}
+	}
+	else {
+		while(1) {
+			printf("Parent Process ID: %d\n", getpid());
+			sleep(2);
+		}
+	}
 
-    return 0;
+	return 0;
 }
