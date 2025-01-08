@@ -31,6 +31,9 @@ int main() {
 
 	pthread_join(printer_ad, NULL);
 	pthread_join(printer_dd, NULL);
+
+	sem_destroy(&sem_ascend);
+	sem_destroy(&sem_descend);
 	printf("\n");
 
 	return 0;
